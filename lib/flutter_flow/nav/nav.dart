@@ -31,17 +31,17 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       initialLocation: '/',
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
-      errorBuilder: (context, _) => PincreateWidget(),
+      errorBuilder: (context, _) => CreateAcWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
-          builder: (context, _) => PincreateWidget(),
+          builder: (context, _) => CreateAcWidget(),
           routes: [
             FFRoute(
-              name: 'PINCREATE',
-              path: 'pincreate',
-              builder: (context, params) => PincreateWidget(),
+              name: 'codesent',
+              path: 'codesent',
+              builder: (context, params) => CodesentWidget(),
             ),
             FFRoute(
               name: 'CreateAc',
@@ -49,9 +49,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               builder: (context, params) => CreateAcWidget(),
             ),
             FFRoute(
-              name: 'codesent',
-              path: 'codesent',
-              builder: (context, params) => CodesentWidget(),
+              name: 'PINCREATE',
+              path: 'pincreate',
+              builder: (context, params) => PincreateWidget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ).toRoute(appStateNotifier),

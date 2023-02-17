@@ -146,7 +146,7 @@ class _PincreateWidgetState extends State<PincreateWidget> {
               ),
             ),
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0, 24, 0, 44),
+              padding: EdgeInsetsDirectional.fromSTEB(0, 24, 0, 75),
               child: FFButtonWidget(
                 onPressed: () {
                   print('Button pressed ...');

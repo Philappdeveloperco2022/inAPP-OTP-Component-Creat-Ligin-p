@@ -47,7 +47,7 @@ class _CodesentWidgetState extends State<CodesentWidget> {
               kTransitionInfoKey: TransitionInfo(
                 hasTransition: true,
                 transitionType: PageTransitionType.bottomToTop,
-                duration: Duration(milliseconds: 3000),
+                duration: Duration(milliseconds: 1000),
               ),
             },
           );
@@ -59,7 +59,7 @@ class _CodesentWidgetState extends State<CodesentWidget> {
               mainAxisSize: MainAxisSize.max,
               children: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0, 50, 0, 0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0, 75, 0, 0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.center,
